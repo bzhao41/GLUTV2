@@ -36,23 +36,6 @@ void Sphere::build() {
     GLuint vTexture = glGetAttribLocation(program, "vTexture");
     glEnableVertexAttribArray(vTexture);
     glVertexAttribPointer(vTexture, 2, GL_FLOAT, GL_FALSE, 0, BUFFER_OFFSET(sizeof(vertexLocations) + sizeof(vertexNormals)));
-    
-    int width = 1600;
-    int height = 800;
-    GLubyte *data = ppmRead("./Planet.ppm", &width, &height);
-    glGenTextures(1, &Texture[0]);
-    glActiveTexture(GL_TEXTURE0);
-    glBindTexture(GL_TEXTURE_2D, Texture[0]);
-    
-    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, data);
-    
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_R, GL_REPEAT);
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
-    
-    delete[] data;
 }
 
 void Sphere::tetrahedron(int count) {
@@ -135,6 +118,25 @@ void Sphere::setMaterial(vec4 d, vec4 a, vec4 s, float sh) {
 	matAmbient  = a;
 	matSpecular = s;
 	shininess   = sh;
+}
+
+void Sphere::setTexture(int w, int h, char* texture) {
+    int width  = w;
+    int height = h;
+    GLubyte *data = ppmRead(texture, &width, &height);
+    glGenTextures(1, &Texture[0]);
+    glActiveTexture(GL_TEXTURE0);
+    glBindTexture(GL_TEXTURE_2D, Texture[0]);
+    
+    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, data);
+    
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_R, GL_REPEAT);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+    
+    delete[] data;
 }
 
 void Sphere::assignParametricNormals() {

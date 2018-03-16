@@ -51,8 +51,8 @@ void main() {
 			specular = Ks * lightSpecular1 * matSpecular;
 		}
 
-        float intensity = max(lightPos1.y/(length(L) * length(L)), 0);
-		color1 = (ambient + diffuse + specular) * intensity;
+        float intensity = max(lightPos1.y / (length(L) * length(L)), 0);
+		color1 = (ambient + diffuse + specular);
 		color1.a = 1.0;
 	}
 

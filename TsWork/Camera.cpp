@@ -43,7 +43,7 @@ mat4 Camera::getCameraMatrix() {
     if (isCamera1) {
         cameraMatrix = LookAt(eye, eye - n, v);
     } else {
-        cameraMatrix = LookAt(vec4(0, 10, 0, 1), vec4(0, 10, 0, 1) - vec4(0, 1, 0, 0), vec4(0, 10, 0, 1) - vec4(0, 0, 1, 0));
+        cameraMatrix = LookAt(vec4(0, 40, 0, 1), vec4(0, 40, 0, 1) - vec4(0, 1, 0, 0), vec4(0, 40, 0, 1) - vec4(0, 0, 1, 0));
     }
     
 	return cameraMatrix;

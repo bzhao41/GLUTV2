@@ -16,12 +16,14 @@ class Sphere: public Drawable {
 		~Sphere();
 		vec4* getLocations() { return vertexLocations; }
 		void  setMaterial(vec4, vec4, vec4, float);
+        void  setTexture(int, int, char*);
+        void  setSpeed(int);
 		void  assignParametricNormals();
 		void  draw(Camera*, vector<Light>);
 	private:
 		static const unsigned int numVertices = 3145728;
 		unsigned int index;
-		float sqrt2, sqrt6, shininess;
+		float sqrt2, sqrt6, shininess, speed;
 		
         GLuint Texture[10];
         GLuint texLoc;

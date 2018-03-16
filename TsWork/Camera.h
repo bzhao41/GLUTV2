@@ -26,7 +26,7 @@ class Camera {
 		mat4 viewMatrix;
 
 		// Camera variables
-		vec4 eye = vec4(0, 2, 0, 1);
+		vec4 eye = vec4(0, 2, 30, 1);
 		vec4 u   = vec4(1, 0, 0, 0);
 		vec4 v   = vec4(0, 1, 0, 0);
 		vec4 n   = vec4(0, 0, 1, 0);
