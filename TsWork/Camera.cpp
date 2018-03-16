@@ -5,7 +5,11 @@ using namespace std;
 
 Camera::Camera() {}
 Camera::Camera(bool f) {
-    magic = f;
+    cameraMatrix = LookAt(vec4(0, 0, 0, 1), vec4(0, 0, 100, 1), vec4(0, 1, 0, 1));
+}
+
+void Camera::positionCamera(vec4 ei, vec4 ni, vec4 vi) {
+    cameraMatrix = LookAt(ei, ei + ni, vi);
 }
 
 void Camera::update(char key) {
@@ -44,7 +48,8 @@ mat4 Camera::getProjectionMatrix() {
 
 mat4 Camera::getCameraMatrix() {
     if (magic) {
-        return LookAt(vec4(0, 0, 0, 1), normalize(vec4(0, 0, 2, 1) - vec4(0, 0, 0, 1)), vec4(0, 1, 0, 0));
+        cameraMatrix = mat4(vec4( -1, 0, 0, 0 ), vec4( 0, 1, 0, 0 ), vec4( 0, 0, -1, 0 ), vec4( 0, 0, 0, 1 ) );
+        return cameraMatrix;
     }
     
     if (isCamera1) {

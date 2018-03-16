@@ -121,7 +121,8 @@ void SkyBox::draw(Camera* cam, vector<Light> lights){
     GLuint vmLoc = glGetUniformLocation(program, "view_matrix");
     GLuint pmLoc = glGetUniformLocation(program, "proj_matrix");
     
-    glUniformMatrix4fv(vmLoc, 1, GL_TRUE, cam->getViewMatrix());
+
+    glUniformMatrix4fv(vmLoc, 1, GL_TRUE, mat4(vec4( -1, 0, 0, 0 ), vec4( 0, 1, 0, 0 ), vec4( 0, 0, -1, 0 ), vec4( 0, 0, 0, 1 ) ));
     glUniformMatrix4fv(pmLoc, 1, GL_TRUE, cam->getProjectionMatrix());
     
     

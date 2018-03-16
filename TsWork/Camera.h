@@ -25,6 +25,7 @@ class Camera {
 		// Final view matrix
 		mat4 getViewMatrix();
 		mat4 viewMatrix;
+    void positionCamera(vec4, vec4, vec4);
 
 		// Camera variables
 		vec4 eye = vec4(0, 2, 30, 1);

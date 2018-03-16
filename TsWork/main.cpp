@@ -64,6 +64,7 @@ void init() {
 	// Create camera
 	camera = new Camera();
     skyCam = new Camera(true);
+    skyCam->positionCamera(vec4(0, 0, 0, 1), normalize(vec4(0, 0, 2, 1) - vec4(0, 0, 0, 1)), vec4(0, 1, 0, 0));
     
     sky = new SkyBox();
     
@@ -152,10 +153,10 @@ void init() {
     drawables[8]->setModelMatrix(Translate(0, 0, -22) * Scale(0.4, 0.4, 0.4));
     
 	// Create floor
-	Floor* mfloor = new Floor();
-	mfloor->setMaterial(vec4(0, 1, 0, 1), vec4(0, 1, 0, 1), vec4(1, 1, 1, 1), 10);
-	drawables.push_back(mfloor);
-    drawables[9]->setModelMatrix(Translate(0, -5, 0));
+//    Floor* mfloor = new Floor();
+//    mfloor->setMaterial(vec4(0, 1, 0, 1), vec4(0, 1, 0, 1), vec4(1, 1, 1, 1), 10);
+//    drawables.push_back(mfloor);
+//    drawables[9]->setModelMatrix(Translate(0, -5, 0));
 
 	// Create directional light
 	Light l1 = Light({ 1, 0, 0, 0 }, 
