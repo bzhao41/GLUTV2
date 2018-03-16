@@ -14,6 +14,7 @@ class Drawable {
 		GLuint VAO;
 		GLuint VBO;
 		mat4 modelmatrix;
+    float speed = 1;
 	public:
 		virtual void draw(Camera*, vector<Light>) = 0;
 		virtual vec4* getLocations() = 0;
@@ -21,5 +22,8 @@ class Drawable {
 		void setModelMatrix(mat4 mm) { modelmatrix = mm; }
 		static unsigned char* ppmRead(char* filename, int* width, int* height);
 		virtual ~Drawable() = 0;;
+    void  setSpeed(float s) {speed = s;};
+    float getSpeed() {return speed; };
+
 };
 #endif

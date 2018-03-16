@@ -16,6 +16,7 @@
 		CFDEFA2E205C29BE00B0A104 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CFDEFA27205C29BD00B0A104 /* main.cpp */; };
 		CFDEFA2F205C29BE00B0A104 /* Sphere.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CFDEFA28205C29BD00B0A104 /* Sphere.cpp */; };
 		CFDEFA30205C29BE00B0A104 /* Camera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CFDEFA29205C29BE00B0A104 /* Camera.cpp */; };
+		CFDEFA38205C5BB900B0A104 /* SkyBox.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CFDEFA36205C5BB900B0A104 /* SkyBox.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -55,6 +56,29 @@
 		CFDEFA33205C2BC900B0A104 /* vshader01_v150.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = vshader01_v150.glsl; path = Build/Products/Debug/vshader01_v150.glsl; sourceTree = SOURCE_ROOT; };
 		CFDEFA34205C2BC900B0A104 /* vshader00_v150.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = vshader00_v150.glsl; path = Build/Products/Debug/vshader00_v150.glsl; sourceTree = SOURCE_ROOT; };
 		CFDEFA35205C2BC900B0A104 /* fshader00_v150.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = fshader00_v150.glsl; path = Build/Products/Debug/fshader00_v150.glsl; sourceTree = SOURCE_ROOT; };
+		CFDEFA36205C5BB900B0A104 /* SkyBox.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SkyBox.cpp; sourceTree = "<group>"; };
+		CFDEFA37205C5BB900B0A104 /* SkyBox.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SkyBox.hpp; sourceTree = "<group>"; };
+		CFDEFA39205C5D9000B0A104 /* vshaderSky_v150.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = vshaderSky_v150.glsl; path = Build/Products/Debug/vshaderSky_v150.glsl; sourceTree = SOURCE_ROOT; };
+		CFDEFA3A205C5D9000B0A104 /* sky-back.ppm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "sky-back.ppm"; path = "TsWork/sky-back.ppm"; sourceTree = SOURCE_ROOT; };
+		CFDEFA3B205C5D9000B0A104 /* mars.ppm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = mars.ppm; path = TsWork/mars.ppm; sourceTree = SOURCE_ROOT; };
+		CFDEFA3C205C5D9100B0A104 /* brks.ppm */ = {isa = PBXFileReference; lastKnownFileType = file; name = brks.ppm; path = TsWork/brks.ppm; sourceTree = SOURCE_ROOT; };
+		CFDEFA3D205C5D9100B0A104 /* jupiter.ppm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = jupiter.ppm; path = TsWork/jupiter.ppm; sourceTree = SOURCE_ROOT; };
+		CFDEFA3E205C5D9100B0A104 /* earth.ppm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = earth.ppm; path = TsWork/earth.ppm; sourceTree = SOURCE_ROOT; };
+		CFDEFA3F205C5D9100B0A104 /* venus.ppm */ = {isa = PBXFileReference; lastKnownFileType = file; name = venus.ppm; path = TsWork/venus.ppm; sourceTree = SOURCE_ROOT; };
+		CFDEFA40205C5D9100B0A104 /* sky-right.ppm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "sky-right.ppm"; path = "TsWork/sky-right.ppm"; sourceTree = SOURCE_ROOT; };
+		CFDEFA41205C5D9100B0A104 /* sky-left.ppm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "sky-left.ppm"; path = "TsWork/sky-left.ppm"; sourceTree = SOURCE_ROOT; };
+		CFDEFA42205C5D9200B0A104 /* sky-bottom.ppm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "sky-bottom.ppm"; path = "TsWork/sky-bottom.ppm"; sourceTree = SOURCE_ROOT; };
+		CFDEFA43205C5D9200B0A104 /* fshaderSky_v150.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = fshaderSky_v150.glsl; path = Build/Products/Debug/fshaderSky_v150.glsl; sourceTree = SOURCE_ROOT; };
+		CFDEFA44205C5D9200B0A104 /* Planet.ppm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Planet.ppm; path = TsWork/Planet.ppm; sourceTree = SOURCE_ROOT; };
+		CFDEFA45205C5D9200B0A104 /* ground_450w_450h.ppm */ = {isa = PBXFileReference; lastKnownFileType = file; name = ground_450w_450h.ppm; path = TsWork/ground_450w_450h.ppm; sourceTree = SOURCE_ROOT; };
+		CFDEFA46205C5D9200B0A104 /* sun.ppm */ = {isa = PBXFileReference; lastKnownFileType = file; name = sun.ppm; path = TsWork/sun.ppm; sourceTree = SOURCE_ROOT; };
+		CFDEFA47205C5D9200B0A104 /* mercury.ppm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = mercury.ppm; path = TsWork/mercury.ppm; sourceTree = SOURCE_ROOT; };
+		CFDEFA48205C5D9300B0A104 /* grass256by256.ppm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = grass256by256.ppm; path = TsWork/grass256by256.ppm; sourceTree = SOURCE_ROOT; };
+		CFDEFA49205C5D9300B0A104 /* sky-front.ppm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "sky-front.ppm"; path = "TsWork/sky-front.ppm"; sourceTree = SOURCE_ROOT; };
+		CFDEFA4A205C5D9300B0A104 /* sky-top.ppm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "sky-top.ppm"; path = "TsWork/sky-top.ppm"; sourceTree = SOURCE_ROOT; };
+		CFDEFA4B205C5D9300B0A104 /* crate_texture.ppm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = crate_texture.ppm; path = TsWork/crate_texture.ppm; sourceTree = SOURCE_ROOT; };
+		CFDEFA4C205C5D9300B0A104 /* neptune.ppm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = neptune.ppm; path = TsWork/neptune.ppm; sourceTree = SOURCE_ROOT; };
+		CFDEFA4D205C5D9300B0A104 /* saturn.ppm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = saturn.ppm; path = TsWork/saturn.ppm; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +114,9 @@
 		CFDEFA0C205C296B00B0A104 /* TsWork */ = {
 			isa = PBXGroup;
 			children = (
+				CFDEFA4E205C5D9B00B0A104 /* Textures */,
+				CFDEFA43205C5D9200B0A104 /* fshaderSky_v150.glsl */,
+				CFDEFA39205C5D9000B0A104 /* vshaderSky_v150.glsl */,
 				CFDEFA35205C2BC900B0A104 /* fshader00_v150.glsl */,
 				CFDEFA32205C2BC900B0A104 /* fshader01_v150.glsl */,
 				CFDEFA34205C2BC900B0A104 /* vshader00_v150.glsl */,
@@ -111,6 +138,8 @@
 				CFDEFA28205C29BD00B0A104 /* Sphere.cpp */,
 				CFDEFA19205C29BC00B0A104 /* Sphere.h */,
 				CFDEFA1C205C29BC00B0A104 /* vec.h */,
+				CFDEFA36205C5BB900B0A104 /* SkyBox.cpp */,
+				CFDEFA37205C5BB900B0A104 /* SkyBox.hpp */,
 			);
 			path = TsWork;
 			sourceTree = "<group>";
@@ -122,6 +151,32 @@
 				CFDEFA15205C297B00B0A104 /* OpenGL.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CFDEFA4E205C5D9B00B0A104 /* Textures */ = {
+			isa = PBXGroup;
+			children = (
+				CFDEFA3C205C5D9100B0A104 /* brks.ppm */,
+				CFDEFA4B205C5D9300B0A104 /* crate_texture.ppm */,
+				CFDEFA3E205C5D9100B0A104 /* earth.ppm */,
+				CFDEFA48205C5D9300B0A104 /* grass256by256.ppm */,
+				CFDEFA45205C5D9200B0A104 /* ground_450w_450h.ppm */,
+				CFDEFA3D205C5D9100B0A104 /* jupiter.ppm */,
+				CFDEFA3B205C5D9000B0A104 /* mars.ppm */,
+				CFDEFA47205C5D9200B0A104 /* mercury.ppm */,
+				CFDEFA4C205C5D9300B0A104 /* neptune.ppm */,
+				CFDEFA44205C5D9200B0A104 /* Planet.ppm */,
+				CFDEFA4D205C5D9300B0A104 /* saturn.ppm */,
+				CFDEFA3A205C5D9000B0A104 /* sky-back.ppm */,
+				CFDEFA42205C5D9200B0A104 /* sky-bottom.ppm */,
+				CFDEFA49205C5D9300B0A104 /* sky-front.ppm */,
+				CFDEFA41205C5D9100B0A104 /* sky-left.ppm */,
+				CFDEFA40205C5D9100B0A104 /* sky-right.ppm */,
+				CFDEFA4A205C5D9300B0A104 /* sky-top.ppm */,
+				CFDEFA46205C5D9200B0A104 /* sun.ppm */,
+				CFDEFA3F205C5D9100B0A104 /* venus.ppm */,
+			);
+			name = Textures;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,6 +239,7 @@
 				CFDEFA2C205C29BE00B0A104 /* Cube.cpp in Sources */,
 				CFDEFA2A205C29BE00B0A104 /* Floor.cpp in Sources */,
 				CFDEFA2E205C29BE00B0A104 /* main.cpp in Sources */,
+				CFDEFA38205C5BB900B0A104 /* SkyBox.cpp in Sources */,
 				CFDEFA2D205C29BE00B0A104 /* Drawable.cpp in Sources */,
 				CFDEFA30205C29BE00B0A104 /* Camera.cpp in Sources */,
 				CFDEFA2F205C29BE00B0A104 /* Sphere.cpp in Sources */,

@@ -6,8 +6,9 @@
 class Camera {
 	private:
 		bool isCamera1 = true;
-
+    bool magic = false;
 	public:
+    Camera(bool f);
 		Camera();
 		void update(char);
 		void toggleCamera();

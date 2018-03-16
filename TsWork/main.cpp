@@ -4,6 +4,7 @@
 #include "Cube.h"
 #include "Sphere.h"
 #include "Floor.h"
+#include "SkyBox.hpp"
 
 // Forward declarations
 void init(void);
@@ -17,6 +18,8 @@ void close(void);
 
 // Objects
 Camera* camera;
+Camera* skyCam;
+SkyBox* sky;
 vector<Light> lights;
 vector<Drawable*> drawables;
 bool toggleFlashlight = false;
@@ -60,6 +63,9 @@ void init() {
 
 	// Create camera
 	camera = new Camera();
+    skyCam = new Camera(true);
+    
+    sky = new SkyBox();
     
     // Create Sun
     Sphere* sun = new Sphere();
@@ -76,6 +82,8 @@ void init() {
                          vec4(0.19225f,  0.19225f,  0.19225f,  0.55),
                          vec4(0.508273f, 0.508273f, 0.508273f, 0.55), 100);
     mercury->setTexture(1024, 512, "./mercury.ppm");
+    mercury->setSpeed(.5);
+
     drawables.push_back(mercury);
     drawables[1]->setModelMatrix(Translate(0, 0, -7) * Scale(0.2, 0.2, 0.2));
     
@@ -139,9 +147,10 @@ void init() {
                          vec4(0.19225f,  0.19225f,  0.19225f,  0.55),
                          vec4(0.508273f, 0.508273f, 0.508273f, 0.55), 100);
     neptune->setTexture(1024, 512, "./neptune.ppm");
+    neptune->setSpeed(10);
     drawables.push_back(neptune);
     drawables[8]->setModelMatrix(Translate(0, 0, -22) * Scale(0.4, 0.4, 0.4));
-
+    
 	// Create floor
 	Floor* mfloor = new Floor();
 	mfloor->setMaterial(vec4(0, 1, 0, 1), vec4(0, 1, 0, 1), vec4(1, 1, 1, 1), 10);
@@ -169,7 +178,7 @@ void init() {
 
 void display(void) {
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-
+    sky->draw(skyCam, lights);
 	for (unsigned int i = 0; i < drawables.size(); i++) {
 		drawables[i]->draw(camera, lights);
 	}
@@ -253,20 +262,16 @@ void animate(int value) {
     float s[] = {0.2, 0.3, 0.3, 0.25, 0.75, 0.6, 0.4, 0.4};
     static int degrees = 0;
     
+    mat4 rot = RotateY(degrees += 5);
     
-    drawables[0]->setModelMatrix(RotateY(degrees += 5) * Scale(5, 5, 5));
+    drawables[0]->setModelMatrix(rot * Scale(5, 5, 5));
     
     for (int i = 0; i < 8; i++) {
-        mat4 rot = RotateY(degrees += r[i]);
         mat4 t1 = Translate(0, 0, -t[i]);
         mat4 t2 = Translate(0, 0, 0);
         
-        drawables[i + 1]->setModelMatrix(t2 * rot * t1 * Scale(s[i], s[i], s[i]));
+        drawables[i + 1]->setModelMatrix(t2 * (rot * drawables[i + 1]->getSpeed()) * t1 * Scale(s[i], s[i], s[i]));
     }
-    
-    //mat4 t1a = Translate(0, 0, -7);
-    //mat4 t2  = Translate(0, 0, 0);
-    //drawables[1]->setModelMatrix(t2 * rot * t1a * Scale(0.2, 0.2, 0.2));
     
     glutTimerFunc(50, animate, value);
     glutPostRedisplay();

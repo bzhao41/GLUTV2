@@ -4,6 +4,9 @@
 using namespace std;
 
 Camera::Camera() {}
+Camera::Camera(bool f) {
+    magic = f;
+}
 
 void Camera::update(char key) {
 	switch (key) {
@@ -40,6 +43,10 @@ mat4 Camera::getProjectionMatrix() {
 }
 
 mat4 Camera::getCameraMatrix() {
+    if (magic) {
+        return LookAt(vec4(0, 0, 0, 1), normalize(vec4(0, 0, 2, 1) - vec4(0, 0, 0, 1)), vec4(0, 1, 0, 0));
+    }
+    
     if (isCamera1) {
         cameraMatrix = LookAt(eye, eye - n, v);
     } else {
