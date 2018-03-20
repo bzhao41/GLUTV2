@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CFAFC0462061B8530028DE7F /* Particle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CFAFC0442061B8520028DE7F /* Particle.cpp */; };
 		CFDEFA16205C297B00B0A104 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFDEFA15205C297B00B0A104 /* OpenGL.framework */; };
 		CFDEFA18205C298000B0A104 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFDEFA17205C298000B0A104 /* GLUT.framework */; };
 		CFDEFA2A205C29BE00B0A104 /* Floor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CFDEFA1F205C29BD00B0A104 /* Floor.cpp */; };
@@ -32,6 +33,30 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		CFAFC0442061B8520028DE7F /* Particle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Particle.cpp; sourceTree = "<group>"; };
+		CFAFC0452061B8530028DE7F /* Particle.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Particle.hpp; sourceTree = "<group>"; };
+		CFAFC0472061B8610028DE7F /* sky-back.ppm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "sky-back.ppm"; path = "TsWork/sky-back.ppm"; sourceTree = SOURCE_ROOT; };
+		CFAFC0482061B8610028DE7F /* mars.ppm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = mars.ppm; path = TsWork/mars.ppm; sourceTree = SOURCE_ROOT; };
+		CFAFC0492061B8620028DE7F /* fshaderParticle_v150.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = fshaderParticle_v150.glsl; path = TsWork/fshaderParticle_v150.glsl; sourceTree = SOURCE_ROOT; };
+		CFAFC04A2061B8620028DE7F /* brks.ppm */ = {isa = PBXFileReference; lastKnownFileType = file; name = brks.ppm; path = TsWork/brks.ppm; sourceTree = SOURCE_ROOT; };
+		CFAFC04B2061B8620028DE7F /* earth.ppm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = earth.ppm; path = TsWork/earth.ppm; sourceTree = SOURCE_ROOT; };
+		CFAFC04C2061B8620028DE7F /* jupiter.ppm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = jupiter.ppm; path = TsWork/jupiter.ppm; sourceTree = SOURCE_ROOT; };
+		CFAFC04D2061B8620028DE7F /* uranus.ppm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = uranus.ppm; path = TsWork/uranus.ppm; sourceTree = SOURCE_ROOT; };
+		CFAFC04E2061B8630028DE7F /* sky-right.ppm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "sky-right.ppm"; path = "TsWork/sky-right.ppm"; sourceTree = SOURCE_ROOT; };
+		CFAFC04F2061B8630028DE7F /* venus.ppm */ = {isa = PBXFileReference; lastKnownFileType = file; name = venus.ppm; path = TsWork/venus.ppm; sourceTree = SOURCE_ROOT; };
+		CFAFC0502061B8630028DE7F /* sky-left.ppm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "sky-left.ppm"; path = "TsWork/sky-left.ppm"; sourceTree = SOURCE_ROOT; };
+		CFAFC0512061B8630028DE7F /* sky-bottom.ppm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "sky-bottom.ppm"; path = "TsWork/sky-bottom.ppm"; sourceTree = SOURCE_ROOT; };
+		CFAFC0522061B8640028DE7F /* vshaderParticle_v150.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = vshaderParticle_v150.glsl; path = TsWork/vshaderParticle_v150.glsl; sourceTree = SOURCE_ROOT; };
+		CFAFC0532061B8640028DE7F /* Planet.ppm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Planet.ppm; path = TsWork/Planet.ppm; sourceTree = SOURCE_ROOT; };
+		CFAFC0542061B8640028DE7F /* ground_450w_450h.ppm */ = {isa = PBXFileReference; lastKnownFileType = file; name = ground_450w_450h.ppm; path = TsWork/ground_450w_450h.ppm; sourceTree = SOURCE_ROOT; };
+		CFAFC0552061B8640028DE7F /* sun.ppm */ = {isa = PBXFileReference; lastKnownFileType = file; name = sun.ppm; path = TsWork/sun.ppm; sourceTree = SOURCE_ROOT; };
+		CFAFC0562061B8640028DE7F /* mercury.ppm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = mercury.ppm; path = TsWork/mercury.ppm; sourceTree = SOURCE_ROOT; };
+		CFAFC0572061B8650028DE7F /* grass256by256.ppm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = grass256by256.ppm; path = TsWork/grass256by256.ppm; sourceTree = SOURCE_ROOT; };
+		CFAFC0582061B8650028DE7F /* sky-front.ppm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "sky-front.ppm"; path = "TsWork/sky-front.ppm"; sourceTree = SOURCE_ROOT; };
+		CFAFC0592061B8650028DE7F /* sky-top.ppm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "sky-top.ppm"; path = "TsWork/sky-top.ppm"; sourceTree = SOURCE_ROOT; };
+		CFAFC05A2061B8680028DE7F /* crate_texture.ppm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = crate_texture.ppm; path = TsWork/crate_texture.ppm; sourceTree = SOURCE_ROOT; };
+		CFAFC05B2061B8680028DE7F /* neptune.ppm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = neptune.ppm; path = TsWork/neptune.ppm; sourceTree = SOURCE_ROOT; };
+		CFAFC05C2061B8680028DE7F /* saturn.ppm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = saturn.ppm; path = TsWork/saturn.ppm; sourceTree = SOURCE_ROOT; };
 		CFDEFA0A205C296B00B0A104 /* TsWork */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TsWork; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFDEFA15205C297B00B0A104 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		CFDEFA17205C298000B0A104 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
@@ -52,33 +77,14 @@
 		CFDEFA27205C29BD00B0A104 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		CFDEFA28205C29BD00B0A104 /* Sphere.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Sphere.cpp; sourceTree = "<group>"; };
 		CFDEFA29205C29BE00B0A104 /* Camera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Camera.cpp; sourceTree = "<group>"; };
-		CFDEFA32205C2BC900B0A104 /* fshader01_v150.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = fshader01_v150.glsl; path = Build/Products/Debug/fshader01_v150.glsl; sourceTree = SOURCE_ROOT; };
-		CFDEFA33205C2BC900B0A104 /* vshader01_v150.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = vshader01_v150.glsl; path = Build/Products/Debug/vshader01_v150.glsl; sourceTree = SOURCE_ROOT; };
-		CFDEFA34205C2BC900B0A104 /* vshader00_v150.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = vshader00_v150.glsl; path = Build/Products/Debug/vshader00_v150.glsl; sourceTree = SOURCE_ROOT; };
-		CFDEFA35205C2BC900B0A104 /* fshader00_v150.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = fshader00_v150.glsl; path = Build/Products/Debug/fshader00_v150.glsl; sourceTree = SOURCE_ROOT; };
+		CFDEFA32205C2BC900B0A104 /* fshader01_v150.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = fshader01_v150.glsl; path = TsWork/fshader01_v150.glsl; sourceTree = SOURCE_ROOT; };
+		CFDEFA33205C2BC900B0A104 /* vshader01_v150.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = vshader01_v150.glsl; path = TsWork/vshader01_v150.glsl; sourceTree = SOURCE_ROOT; };
+		CFDEFA34205C2BC900B0A104 /* vshader00_v150.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = vshader00_v150.glsl; path = TsWork/vshader00_v150.glsl; sourceTree = SOURCE_ROOT; };
+		CFDEFA35205C2BC900B0A104 /* fshader00_v150.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = fshader00_v150.glsl; path = TsWork/fshader00_v150.glsl; sourceTree = SOURCE_ROOT; };
 		CFDEFA36205C5BB900B0A104 /* SkyBox.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SkyBox.cpp; sourceTree = "<group>"; };
 		CFDEFA37205C5BB900B0A104 /* SkyBox.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SkyBox.hpp; sourceTree = "<group>"; };
-		CFDEFA39205C5D9000B0A104 /* vshaderSky_v150.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = vshaderSky_v150.glsl; path = Build/Products/Debug/vshaderSky_v150.glsl; sourceTree = SOURCE_ROOT; };
-		CFDEFA3A205C5D9000B0A104 /* sky-back.ppm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "sky-back.ppm"; path = "TsWork/sky-back.ppm"; sourceTree = SOURCE_ROOT; };
-		CFDEFA3B205C5D9000B0A104 /* mars.ppm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = mars.ppm; path = TsWork/mars.ppm; sourceTree = SOURCE_ROOT; };
-		CFDEFA3C205C5D9100B0A104 /* brks.ppm */ = {isa = PBXFileReference; lastKnownFileType = file; name = brks.ppm; path = TsWork/brks.ppm; sourceTree = SOURCE_ROOT; };
-		CFDEFA3D205C5D9100B0A104 /* jupiter.ppm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = jupiter.ppm; path = TsWork/jupiter.ppm; sourceTree = SOURCE_ROOT; };
-		CFDEFA3E205C5D9100B0A104 /* earth.ppm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = earth.ppm; path = TsWork/earth.ppm; sourceTree = SOURCE_ROOT; };
-		CFDEFA3F205C5D9100B0A104 /* venus.ppm */ = {isa = PBXFileReference; lastKnownFileType = file; name = venus.ppm; path = TsWork/venus.ppm; sourceTree = SOURCE_ROOT; };
-		CFDEFA40205C5D9100B0A104 /* sky-right.ppm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "sky-right.ppm"; path = "TsWork/sky-right.ppm"; sourceTree = SOURCE_ROOT; };
-		CFDEFA41205C5D9100B0A104 /* sky-left.ppm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "sky-left.ppm"; path = "TsWork/sky-left.ppm"; sourceTree = SOURCE_ROOT; };
-		CFDEFA42205C5D9200B0A104 /* sky-bottom.ppm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "sky-bottom.ppm"; path = "TsWork/sky-bottom.ppm"; sourceTree = SOURCE_ROOT; };
-		CFDEFA43205C5D9200B0A104 /* fshaderSky_v150.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = fshaderSky_v150.glsl; path = Build/Products/Debug/fshaderSky_v150.glsl; sourceTree = SOURCE_ROOT; };
-		CFDEFA44205C5D9200B0A104 /* Planet.ppm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Planet.ppm; path = TsWork/Planet.ppm; sourceTree = SOURCE_ROOT; };
-		CFDEFA45205C5D9200B0A104 /* ground_450w_450h.ppm */ = {isa = PBXFileReference; lastKnownFileType = file; name = ground_450w_450h.ppm; path = TsWork/ground_450w_450h.ppm; sourceTree = SOURCE_ROOT; };
-		CFDEFA46205C5D9200B0A104 /* sun.ppm */ = {isa = PBXFileReference; lastKnownFileType = file; name = sun.ppm; path = TsWork/sun.ppm; sourceTree = SOURCE_ROOT; };
-		CFDEFA47205C5D9200B0A104 /* mercury.ppm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = mercury.ppm; path = TsWork/mercury.ppm; sourceTree = SOURCE_ROOT; };
-		CFDEFA48205C5D9300B0A104 /* grass256by256.ppm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = grass256by256.ppm; path = TsWork/grass256by256.ppm; sourceTree = SOURCE_ROOT; };
-		CFDEFA49205C5D9300B0A104 /* sky-front.ppm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "sky-front.ppm"; path = "TsWork/sky-front.ppm"; sourceTree = SOURCE_ROOT; };
-		CFDEFA4A205C5D9300B0A104 /* sky-top.ppm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "sky-top.ppm"; path = "TsWork/sky-top.ppm"; sourceTree = SOURCE_ROOT; };
-		CFDEFA4B205C5D9300B0A104 /* crate_texture.ppm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = crate_texture.ppm; path = TsWork/crate_texture.ppm; sourceTree = SOURCE_ROOT; };
-		CFDEFA4C205C5D9300B0A104 /* neptune.ppm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = neptune.ppm; path = TsWork/neptune.ppm; sourceTree = SOURCE_ROOT; };
-		CFDEFA4D205C5D9300B0A104 /* saturn.ppm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = saturn.ppm; path = TsWork/saturn.ppm; sourceTree = SOURCE_ROOT; };
+		CFDEFA39205C5D9000B0A104 /* vshaderSky_v150.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = vshaderSky_v150.glsl; path = TsWork/vshaderSky_v150.glsl; sourceTree = SOURCE_ROOT; };
+		CFDEFA43205C5D9200B0A104 /* fshaderSky_v150.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = fshaderSky_v150.glsl; path = TsWork/fshaderSky_v150.glsl; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +100,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CFAFC05E2061B88D0028DE7F /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				CFDEFA33205C2BC900B0A104 /* vshader01_v150.glsl */,
+				CFDEFA43205C5D9200B0A104 /* fshaderSky_v150.glsl */,
+				CFDEFA39205C5D9000B0A104 /* vshaderSky_v150.glsl */,
+				CFDEFA35205C2BC900B0A104 /* fshader00_v150.glsl */,
+				CFDEFA32205C2BC900B0A104 /* fshader01_v150.glsl */,
+				CFDEFA34205C2BC900B0A104 /* vshader00_v150.glsl */,
+				CFAFC0492061B8620028DE7F /* fshaderParticle_v150.glsl */,
+				CFAFC0522061B8640028DE7F /* vshaderParticle_v150.glsl */,
+			);
+			name = Shaders;
+			sourceTree = "<group>";
+		};
+		CFAFC05F2061B89C0028DE7F /* OpenGL */ = {
+			isa = PBXGroup;
+			children = (
+				CFDEFA1D205C29BD00B0A104 /* Angel.h */,
+				CFDEFA29205C29BE00B0A104 /* Camera.cpp */,
+				CFDEFA1C205C29BC00B0A104 /* vec.h */,
+				CFDEFA1B205C29BC00B0A104 /* Camera.h */,
+				CFDEFA1A205C29BC00B0A104 /* CheckError.h */,
+				CFDEFA21205C29BD00B0A104 /* InitShader.cpp */,
+				CFDEFA25205C29BD00B0A104 /* Drawable.cpp */,
+				CFDEFA20205C29BD00B0A104 /* mat.h */,
+				CFDEFA1E205C29BD00B0A104 /* Drawable.h */,
+			);
+			name = OpenGL;
+			sourceTree = "<group>";
+		};
 		CFDEFA01205C296A00B0A104 = {
 			isa = PBXGroup;
 			children = (
@@ -114,30 +151,19 @@
 		CFDEFA0C205C296B00B0A104 /* TsWork */ = {
 			isa = PBXGroup;
 			children = (
+				CFAFC05F2061B89C0028DE7F /* OpenGL */,
+				CFAFC05E2061B88D0028DE7F /* Shaders */,
 				CFDEFA4E205C5D9B00B0A104 /* Textures */,
-				CFDEFA43205C5D9200B0A104 /* fshaderSky_v150.glsl */,
-				CFDEFA39205C5D9000B0A104 /* vshaderSky_v150.glsl */,
-				CFDEFA35205C2BC900B0A104 /* fshader00_v150.glsl */,
-				CFDEFA32205C2BC900B0A104 /* fshader01_v150.glsl */,
-				CFDEFA34205C2BC900B0A104 /* vshader00_v150.glsl */,
-				CFDEFA33205C2BC900B0A104 /* vshader01_v150.glsl */,
-				CFDEFA1D205C29BD00B0A104 /* Angel.h */,
-				CFDEFA29205C29BE00B0A104 /* Camera.cpp */,
-				CFDEFA1B205C29BC00B0A104 /* Camera.h */,
-				CFDEFA1A205C29BC00B0A104 /* CheckError.h */,
+				CFAFC0442061B8520028DE7F /* Particle.cpp */,
+				CFAFC0452061B8530028DE7F /* Particle.hpp */,
 				CFDEFA24205C29BD00B0A104 /* Cube.cpp */,
 				CFDEFA22205C29BD00B0A104 /* Cube.h */,
-				CFDEFA25205C29BD00B0A104 /* Drawable.cpp */,
-				CFDEFA1E205C29BD00B0A104 /* Drawable.h */,
+				CFDEFA26205C29BD00B0A104 /* Light.h */,
 				CFDEFA1F205C29BD00B0A104 /* Floor.cpp */,
 				CFDEFA23205C29BD00B0A104 /* Floor.h */,
-				CFDEFA21205C29BD00B0A104 /* InitShader.cpp */,
-				CFDEFA26205C29BD00B0A104 /* Light.h */,
 				CFDEFA27205C29BD00B0A104 /* main.cpp */,
-				CFDEFA20205C29BD00B0A104 /* mat.h */,
 				CFDEFA28205C29BD00B0A104 /* Sphere.cpp */,
 				CFDEFA19205C29BC00B0A104 /* Sphere.h */,
-				CFDEFA1C205C29BC00B0A104 /* vec.h */,
 				CFDEFA36205C5BB900B0A104 /* SkyBox.cpp */,
 				CFDEFA37205C5BB900B0A104 /* SkyBox.hpp */,
 			);
@@ -156,25 +182,26 @@
 		CFDEFA4E205C5D9B00B0A104 /* Textures */ = {
 			isa = PBXGroup;
 			children = (
-				CFDEFA3C205C5D9100B0A104 /* brks.ppm */,
-				CFDEFA4B205C5D9300B0A104 /* crate_texture.ppm */,
-				CFDEFA3E205C5D9100B0A104 /* earth.ppm */,
-				CFDEFA48205C5D9300B0A104 /* grass256by256.ppm */,
-				CFDEFA45205C5D9200B0A104 /* ground_450w_450h.ppm */,
-				CFDEFA3D205C5D9100B0A104 /* jupiter.ppm */,
-				CFDEFA3B205C5D9000B0A104 /* mars.ppm */,
-				CFDEFA47205C5D9200B0A104 /* mercury.ppm */,
-				CFDEFA4C205C5D9300B0A104 /* neptune.ppm */,
-				CFDEFA44205C5D9200B0A104 /* Planet.ppm */,
-				CFDEFA4D205C5D9300B0A104 /* saturn.ppm */,
-				CFDEFA3A205C5D9000B0A104 /* sky-back.ppm */,
-				CFDEFA42205C5D9200B0A104 /* sky-bottom.ppm */,
-				CFDEFA49205C5D9300B0A104 /* sky-front.ppm */,
-				CFDEFA41205C5D9100B0A104 /* sky-left.ppm */,
-				CFDEFA40205C5D9100B0A104 /* sky-right.ppm */,
-				CFDEFA4A205C5D9300B0A104 /* sky-top.ppm */,
-				CFDEFA46205C5D9200B0A104 /* sun.ppm */,
-				CFDEFA3F205C5D9100B0A104 /* venus.ppm */,
+				CFAFC0572061B8650028DE7F /* grass256by256.ppm */,
+				CFAFC0542061B8640028DE7F /* ground_450w_450h.ppm */,
+				CFAFC04C2061B8620028DE7F /* jupiter.ppm */,
+				CFAFC0482061B8610028DE7F /* mars.ppm */,
+				CFAFC0562061B8640028DE7F /* mercury.ppm */,
+				CFAFC05B2061B8680028DE7F /* neptune.ppm */,
+				CFAFC0532061B8640028DE7F /* Planet.ppm */,
+				CFAFC04A2061B8620028DE7F /* brks.ppm */,
+				CFAFC05A2061B8680028DE7F /* crate_texture.ppm */,
+				CFAFC04B2061B8620028DE7F /* earth.ppm */,
+				CFAFC05C2061B8680028DE7F /* saturn.ppm */,
+				CFAFC0472061B8610028DE7F /* sky-back.ppm */,
+				CFAFC0512061B8630028DE7F /* sky-bottom.ppm */,
+				CFAFC0582061B8650028DE7F /* sky-front.ppm */,
+				CFAFC0502061B8630028DE7F /* sky-left.ppm */,
+				CFAFC04E2061B8630028DE7F /* sky-right.ppm */,
+				CFAFC0592061B8650028DE7F /* sky-top.ppm */,
+				CFAFC0552061B8640028DE7F /* sun.ppm */,
+				CFAFC04D2061B8620028DE7F /* uranus.ppm */,
+				CFAFC04F2061B8630028DE7F /* venus.ppm */,
 			);
 			name = Textures;
 			sourceTree = "<group>";
@@ -237,6 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CFDEFA2C205C29BE00B0A104 /* Cube.cpp in Sources */,
+				CFAFC0462061B8530028DE7F /* Particle.cpp in Sources */,
 				CFDEFA2A205C29BE00B0A104 /* Floor.cpp in Sources */,
 				CFDEFA2E205C29BE00B0A104 /* main.cpp in Sources */,
 				CFDEFA38205C5BB900B0A104 /* SkyBox.cpp in Sources */,

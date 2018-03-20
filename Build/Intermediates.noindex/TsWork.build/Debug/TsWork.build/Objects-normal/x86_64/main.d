@@ -9,4 +9,5 @@ dependencies: /Users/brucezhao/Documents/TsWork/TsWork/main.cpp \
   /Users/brucezhao/Documents/TsWork/TsWork/Drawable.h \
   /Users/brucezhao/Documents/TsWork/TsWork/Sphere.h \
   /Users/brucezhao/Documents/TsWork/TsWork/Floor.h \
-  /Users/brucezhao/Documents/TsWork/TsWork/SkyBox.hpp
+  /Users/brucezhao/Documents/TsWork/TsWork/SkyBox.hpp \
+  /Users/brucezhao/Documents/TsWork/TsWork/Particle.hpp

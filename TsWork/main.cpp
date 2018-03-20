@@ -5,6 +5,7 @@
 #include "Sphere.h"
 #include "Floor.h"
 #include "SkyBox.hpp"
+#include "Particle.hpp"
 
 // Forward declarations
 void init(void);
@@ -22,6 +23,8 @@ Camera* skyCam;
 SkyBox* sky;
 vector<Light> lights;
 vector<Drawable*> drawables;
+Particle* particles;
+
 bool toggleFlashlight = false;
 static float t = 0;
 
@@ -173,6 +176,8 @@ void init() {
 
 	lights.push_back(l1);
 	lights.push_back(l2);
+    
+    particles = new Particle();
     
     animate(75);
 }
